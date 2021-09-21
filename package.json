@@ -18,7 +18,7 @@
   "scripts": {
     "build:watch": "webpack --mode=development --watch",
     "release": "webpack --mode=production --config webpack.production.config.js",
-    "publish": "npm run release && dotnet publish -c Release"
+    "test": "echo \"No test specified\""
   },
   "keywords": [
     "parser",

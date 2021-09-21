@@ -3,7 +3,7 @@
 Easyly convert json data from editorjs to html elements
 
 # installaton
- `npm install editorjs-data-parser`
+ `npm i editorjs-data-parser`
  
  `yarn add editorjs-data-parser`
 
@@ -27,7 +27,7 @@ Easyly convert json data from editorjs to html elements
 
 
 ```javascript
-import  { edtiorJSParser } from './editor.parser';
+import  { edtiorJSParser } from 'editorjs-data-parser';
 import EditorJS from "@editorjs/editorjs";
 import Header from "@editorjs/header";
 import List from "@editorjs/list";
