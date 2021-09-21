@@ -19,6 +19,8 @@ export const header = (param: string, type: number) => {
         case 6:
             headerValue += `<h6>${param}</h6a>`;
             break;
+        default:
+            headerValue += ''
     }
     return headerValue;
 };
