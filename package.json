@@ -1,6 +1,6 @@
 {
   "name": "editorjs-data-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert json data from editorjs to html elements",
   "main": "index.js",
   "repository": "https://github.com/salimzade/editorjs-data-parser.git",
