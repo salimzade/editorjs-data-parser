@@ -13,7 +13,7 @@ import {
     warning,
 } from './tools';
 
-export const parser = (value: { array: any[] }) => {
+const editorJsParser = (value: { array: any[] }) => {
     let editorData = '';
 
     value.array.forEach((element) => {
@@ -60,3 +60,5 @@ export const parser = (value: { array: any[] }) => {
 
     return editorData;
 };
+
+module.exports = editorJsParser
