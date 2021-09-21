@@ -2,7 +2,7 @@
 
 Easyly convert json data from editorjs to html elements
 
-# installaton
+# Installaton
  `npm i editorjs-data-parser`
  
  `yarn add editorjs-data-parser`
@@ -66,3 +66,7 @@ btnSaves.addEventListener("click", () => {
 ```
 
 **Output will be HTML blocks**
+
+# Demo
+
+**[Editorjs Data Parser demo](https://codesandbox.io/s/editor-js-data-parser-demo-gsx51?file=/src/index.js "Editorjs Data Parser demo")**
