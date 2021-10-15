@@ -1,0 +1,37 @@
+{
+  "name": "editorjs-data-parser",
+  "version": "1.0.3",
+  "description": "Easily convert json data from editorjs to html elements",
+  "source": "src/index.ts",
+  "main": "dist/lib/index.js",
+  "module": "dist/index.js",
+  "types": "dist/types.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salimzade/editorjs-data-parser.git"
+  },
+  "author": "teymur.salimzade@gmail.com",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build",
+    "publish": ""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@parcel/packager-ts": "^2.0.0",
+    "@parcel/transformer-typescript-types": "^2.0.0",
+    "parcel": "^2.0.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.4"
+  },
+  "bugs": {
+    "url": "https://github.com/salimzade/editorjs-data-parser/issues"
+  },
+  "homepage": "https://github.com/salimzade/editorjs-data-parser#readme",
+  "keywords": ["Editorjs, Codex-Editor", "Editorjs-Data-Parser"]
+}
