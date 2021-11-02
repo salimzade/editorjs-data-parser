@@ -65,7 +65,17 @@ const $a8e45e348eee6521$export$38e42c68cf43b5d4 = (param, type)=>{
 
 
 const $09a35277ca4d3315$export$5c452ff88e35e47d = (param)=>{
-    return `<img src='${param.file.url}' alt='${param.caption}'/>`;
+    const imgParams = `${param.stretched ? 'ejs-img__fullwidth' : ''} ${param.withBorder ? 'ejs-image__withBorder' : ''} ${param.withBackground ? 'ejs-img__background' : ''}`;
+    // let imgSrc;
+    //
+    // if (param.url) {
+    //   imgSrc = param.url;
+    // } else if (param.image.path === 'absolute') {
+    //   imgSrc = param.file.url;
+    // } else {
+    //   imgSrc = path.image.path.replace(/<.+>/, (match, p1) => param.file[p1]);
+    // }
+    return `<div class="${imgParams}"><img class="ejs-image" src="${param.file.url}" alt="${param.caption}"></div>`;
 };
 
 
