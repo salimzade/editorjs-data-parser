@@ -1,6 +1,6 @@
 {
   "name": "editorjs-data-parser",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "Easily convert json data from editorjs to html elements",
   "source": "src/index.ts",
   "main": "dist/lib/index.js",
