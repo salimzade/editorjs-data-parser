@@ -1,6 +1,10 @@
+<p align="center">
+  <img src="https://uf6j3.csb.app/src/static/ejsp.svg" width="256"/>
+</p>
+
 # EditorJs Data Parser
 
-Easyly convert json data from editorjs to html elements
+Easily convert json data from editorjs to html elements
 
 # Installaton
  `npm i editorjs-data-parser`
@@ -28,23 +32,32 @@ Easyly convert json data from editorjs to html elements
 
 
 ```javascript
-import  { edtiorJSParser } from 'editorjs-data-parser';
 import EditorJS from "@editorjs/editorjs";
+import CheckList from "@editorjs/checklist";
+import Code from "@editorjs/code";
 import Header from "@editorjs/header";
 import List from "@editorjs/list";
 import Embed from "@editorjs/embed";
+import Delimiter from "@editorjs/delimiter";
+import Marker from "@editorjs/marker";
+import Image from "@editorjs/image";
+import Raw from "@editorjs/raw";
+import Table from "@editorjs/table";
+import Warning from "@editorjs/warning";
+import { editorJsParser } from "editorjs-data-parser";
 
 const editor = new EditorJS({
-  holderId: "editorJS",
   tools: {
     header: {
       class: Header,
-      inlineToolbar: ["link"]
+      inlineToolbar: true
     },
     list: {
       class: List,
       inlineToolbar: true
     },
+    checklist: CheckList,
+    delimiter: Delimiter,
     embed: {
       class: Embed,
       inlineToolbar: false,
@@ -54,20 +67,58 @@ const editor = new EditorJS({
           coub: true
         }
       }
-    }
-  }
+    },
+    image: {
+      class: Image,
+      config: {
+        endpoints: {
+          byFile: "http://localhost:8008/uploadFile", // Your backend file uploader endpoint
+          byUrl: "http://localhost:8008/fetchUrl" // Your endpoint that provides uploading by Url
+        }
+      }
+    },
+    checkList: CheckList,
+    code: Code,
+    raw: Raw,
+    table: Table,
+    warning: Warning,
+    marker: Marker
+  },
+  data: mockData
 });
 
-let btnSaves = document.getElementById("btnSaves");
-btnSaves.addEventListener("click", () => {
-  editor.save().then(outputData => {
-    console.log(edtiorJSParser(outputData.blocks));
+let btnConvert = document.getElementById("btnConvert");
+btnConvert.addEventListener("click", () => {
+  editor.save().then((outputData) => {
+    let result = editorJsParser(outputData.blocks);
+    console.log(result);
   });
 });
 ```
 
-**Output will be HTML blocks**
 
-# Demo
+# All supported dependencies
 
-**[Editorjs Data Parser demo](https://codesandbox.io/s/editor-js-data-parser-demo-gsx51?file=/src/index.js "Editorjs Data Parser demo")**
+`npm i --save @editorjs/checklist`
+
+`npm i --save @editorjs/code`
+
+`npm i --save @editorjs/header`
+
+`npm i --save @editorjs/list`
+
+`npm i --save @editorjs/embed`
+
+`npm i --save @editorjs/delimiter`
+
+`npm i --save @editorjs/marker`
+
+`npm i --save @editorjs/marker`
+
+`npm i --save @editorjs/image`
+
+`npm i --save @editorjs/raw`
+
+`npm i --save @editorjs/table`
+
+`npm i --save @editorjs/warning`
