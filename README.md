@@ -19,34 +19,21 @@
 
 # Suppoted tools
 
- :rocket: checklist
-
- :rocket: embed
-
- :rocket: head
-
- :rocket: link
-
- :rocket: list
-
- :rocket: marker
-
- :rocket: paragraph
-
- :rocket: quote
-
- :rocket: raw
-
- :rocket: table
-
- :rocket: code
-
- :rocket: warning
-
- :rocket: delimeter
+- [x] checklist
+- [x] embed
+- [x] head
+- [x] link
+- [x] list
+- [x] marker
+- [x] paragraph
+- [x] quote
+- [x] raw
+- [x] table
+- [x] code
+- [x] warning
+- [x] delimeter
 
 # Usage example
-
 
 
 ```javascript
