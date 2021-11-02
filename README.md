@@ -25,6 +25,7 @@
 - [x] link
 - [x] list
 - [x] marker
+- [x] image
 - [x] paragraph
 - [x] quote
 - [x] raw
