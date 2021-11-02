@@ -76,6 +76,7 @@ const editor = new EditorJS({
     },
     checklist: CheckList,
     delimiter: Delimiter,
+    marker: Marker,
     embed: {
       class: Embed,
       inlineToolbar: false,
@@ -100,9 +101,7 @@ const editor = new EditorJS({
     raw: Raw,
     table: Table,
     warning: Warning,
-    marker: Marker
-  },
-  data: mockData
+  }
 });
 
 let btnConvert = document.getElementById("btnConvert");
@@ -111,6 +110,7 @@ btnConvert.addEventListener("click", () => {
     let result = editorJsParser(outputData.blocks);
     console.log(result);
   });
+  
 });
 ```
 <br/>
