@@ -13,3 +13,7 @@ node_modules
 # Parcel related files
 .cache/
 .parcel-cache/
+
+# Dist folder
+.DS_Store
+dist/
