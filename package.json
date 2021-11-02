@@ -15,7 +15,7 @@
   },
   "author": "teymur.salimzade@gmail.com",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "scripts": {
     "watch": "parcel watch",
     "build": "parcel build",
