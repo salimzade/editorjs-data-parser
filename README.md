@@ -19,31 +19,31 @@
 
 # Suppoted tools
 
- :ok_hand: checklist
+ :rocket: checklist
 
- :ok_hand: embed
+ :rocket: embed
 
- :ok_hand: head
+ :rocket: head
 
- :ok_hand: link
+ :rocket: link
 
- :ok_hand: list
+ :rocket: list
 
- :ok_hand: marker
+ :rocket: marker
 
- :ok_hand: paragraph
+ :rocket: paragraph
 
- :ok_hand: quote
+ :rocket: quote
 
- :ok_hand: raw
+ :rocket: raw
 
- :ok_hand: table
+ :rocket: table
 
- :ok_hand: code
+ :rocket: code
 
- :ok_hand: warning
+ :rocket: warning
 
- :ok_hand: delimeter
+ :rocket: delimeter
 
 # Usage example
 
@@ -110,7 +110,6 @@ btnConvert.addEventListener("click", () => {
     let result = editorJsParser(outputData.blocks);
     console.log(result);
   });
-  
 });
 ```
 <br/>
