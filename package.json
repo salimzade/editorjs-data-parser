@@ -1,6 +1,6 @@
 {
   "name": "editorjs-data-parser",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Easily convert json data from editorjs to html elements",
   "source": "src/index.ts",
   "main": "dist/lib/index.js",
@@ -33,5 +33,8 @@
     "url": "https://github.com/salimzade/editorjs-data-parser/issues"
   },
   "homepage": "https://github.com/salimzade/editorjs-data-parser#readme",
-  "keywords": ["Editorjs, Codex-Editor", "Editorjs-Data-Parser"]
+  "keywords": [
+    "Editorjs, Codex-Editor",
+    "Editorjs-Data-Parser"
+  ]
 }
