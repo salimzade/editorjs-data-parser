@@ -19,20 +19,20 @@
 
 # Suppoted tools
 
-- [x] checklist
-- [x] embed
-- [x] head
-- [x] link
-- [x] list
-- [x] marker
-- [x] image
-- [x] paragraph
-- [x] quote
-- [x] raw
-- [x] table
-- [x] code
-- [x] warning
-- [x] delimeter
+- :white_check_mark: checklist
+- :white_check_mark: embed
+- :white_check_mark: head
+- :white_check_mark: link
+- :white_check_mark: list
+- :white_check_mark: marker
+- :white_check_mark: image
+- :white_check_mark: paragraph
+- :white_check_mark: quote
+- :white_check_mark: raw
+- :white_check_mark: table
+- :white_check_mark: code
+- :white_check_mark: warning
+- :white_check_mark: delimeter
 
 # Usage example
 
